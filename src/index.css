@@ -14,6 +14,6 @@
       background-size: cover; /* Corrigido: era background-color: cover */
       background-repeat: no-repeat;
       /* Evita colocar padding fixo aqui se quiseres usar Tailwind no HTML */
-      padding: 10% 2rem; 
+      padding: 10% 1rem; 
     }
   }
