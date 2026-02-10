@@ -1,3 +1,4 @@
+import { Footer } from "./Footer"
 import "./index.css"
 import { Pesquisar } from "./Search/Pesquisar"
 import { ShoWheather } from "./ShowWheather/ShoWheather"
@@ -17,6 +18,7 @@ function App() {
         <main className="w-full flex flex-col justify-center items-center mb-8">
           <ShowWheatherWeek/>
         </main>
+        <Footer/>
       </>    
   )
 }
