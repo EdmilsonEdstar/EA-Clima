@@ -1,4 +1,4 @@
-import { Droplet, Sun, Thermometer, WindIcon } from "lucide-react";
+import { Droplet, LucideThermometer, Sun,  WindIcon } from "lucide-react";
 
 export function ShoWheather() {
 
@@ -12,10 +12,10 @@ export function ShoWheather() {
                     </div>
                     <span className="text-gray-500">Céu Limpo</span>
                 </div>
-                <div className="flex justify-center flex-wrap items-center gap-6">
-                    <span className="text-gray-500">Sen. Térmica: <Thermometer/> 34ºc</span>
-                    <span className="text-gray-500">Umidade: <Droplet/> 10%</span>
-                    <span className="text-gray-500">Vento: <WindIcon/> 18 km/h</span>
+                <div className="flex  justify-between items-center py-4 gap-6">
+                    <span className="text-gray-500"><LucideThermometer/> 34ºc</span>
+                    <span className="text-gray-500"> <Droplet/> 10%</span>
+                    <span className="text-gray-500"> <WindIcon/> 18km/h</span>
                 </div>  
              </div>
         </>
