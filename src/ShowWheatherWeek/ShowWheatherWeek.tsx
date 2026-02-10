@@ -4,7 +4,7 @@ export function ShowWheatherWeek() {
 
   return (
         <>
-             <div className="w-full flex justify-center items-center overflow-y-auto text-center gap-[4rem] py-8 px-4  bg-gray-100/30 rounded-2xl ">
+             <div className="w-full flex justify-center items-center overflow-y-auto text-center gap-[4rem] py-8 px-4  bg-gray-100/70 rounded-2xl ">
                 <div className="flex flex-col justify-center items-center gap-2">
                     <span className="text-gray-500">Seg</span>
                     <div className="flex justify-center items-center gap-2 text-xl">
