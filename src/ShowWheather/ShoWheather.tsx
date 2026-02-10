@@ -4,7 +4,7 @@ export function ShoWheather() {
 
   return (
         <>
-             <div className="w-full flex flex-col justify-center items-center gap-3 py-8 px-2  bg-gray-100/70 rounded-2xl ">
+             <div className="w-full flex flex-col justify-center items-center gap-3 py-8 px-2  bg-[var(--bg-color)] text-[var(--text-color)] rounded-2xl ">
                 <div className="flex flex-col justify-center items-center gap-2">
                     <span className="text-gray-500">Luanda</span>
                     <div className="flex justify-center items-center gap-2 text-4xl">
