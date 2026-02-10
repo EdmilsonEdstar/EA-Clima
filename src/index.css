@@ -32,7 +32,7 @@
       body {
           width: 100%;
           height: 100vh;
-          background-image: var(--light);
+          background-image: var(--dark);
           background-size: cover; /* Corrigido: era background-color: cover */
           background-repeat: no-repeat;
           /* Evita colocar padding fixo aqui se quiseres usar Tailwind no HTML */
