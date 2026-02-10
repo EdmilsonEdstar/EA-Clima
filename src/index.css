@@ -9,8 +9,8 @@
   
 
     :root{
-      --dark: url("/dark.png");
-      --light: url("/light.png"); 
+      --dark: url("/dark.webp");
+      --light: url("/light.webp"); 
     }
 
 
