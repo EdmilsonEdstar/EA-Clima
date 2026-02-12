@@ -22,9 +22,9 @@
           background-repeat: no-repeat;
           /* Evita colocar padding fixo aqui se quiseres usar Tailwind no HTML */
           padding: 10% 1rem; 
-          --bg-color: rgba(27, 27, 27, 0.6);
+          --bg-color: rgb(28, 28, 28,0.9);
           --text-color:white;
-          --bt-color:rgb(26, 81, 147,0.5);
+          --bt-color:rgb(17, 73, 141);
       }
     }
 

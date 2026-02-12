@@ -1,4 +1,4 @@
-import {SearchIcon } from "lucide-react"
+import {MapPin} from "lucide-react"
 import {useRef, useState } from "react"
 import axios from "axios";
 import {ShoWeather} from "../ShowWeather/ShoWeather";
@@ -45,7 +45,7 @@ export function Pesquisar() {
     const key = "ef30d3e19495a22504597735b956ea48";
     
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric&lang=pt`;
-    const url5days = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${key}&lang=pt`;
+    const url5days = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${key}&units=metric&lang=pt`;
   
 
     const apiInfo = await axios.get(url);
@@ -63,8 +63,8 @@ export function Pesquisar() {
                 <label htmlFor="search" className=" flex text-2xl pb-2 text-[var(--text-color)] font-bold">EA-Weather</label>
               
                 <div className="w-full xl:w-[50%] flex justify-between items-center gap-2 px-8  bg-[var(--bg-color)] text-[var(--text-color)] rounded-2xl ">
-                    <span><SearchIcon className="text-[var(--text-color)]" /></span>
-                    <input ref={inputRef} type="text" id="search" placeholder="Degite a cidade" autoComplete="off" className="h-[4rem] w-[10rem] text-sm focus:outline-none" />
+                    <span><MapPin className="text-[var(--text-color)]" /></span>
+                    <input ref={inputRef} type="text" id="search" placeholder="Degite a cidade" autoComplete="off" className="h-[4rem] w-full text-sm focus:outline-none" />
                     <button onClick={seacrhCity} className="bg-[var(--bt-color)] text-white px-3 py-2  rounded-2xl text-sm xl:text-center">Pesquisar</button>
                 </div>
             </main>
