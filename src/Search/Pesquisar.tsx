@@ -62,7 +62,7 @@ export function Pesquisar() {
             <main className="w-full flex flex-col justify-center items-center mb-8">
                 <label htmlFor="search" className=" flex text-2xl pb-2 text-[var(--text-color)] font-bold">EA-Weather</label>
               
-                <div className="w-full xl:w-[50%] flex justify-between items-center gap-2 px-8  bg-[var(--bg-color)] text-[var(--text-color)] rounded-2xl ">
+                <div className="w-full xl:w-[50%] flex justify-between items-center gap-2 px-4  bg-[var(--bg-color)] text-[var(--text-color)] rounded-2xl ">
                     <span><MapPin className="text-[var(--text-color)]" /></span>
                     <input ref={inputRef} type="text" id="search" placeholder="Degite a cidade" autoComplete="off" className="h-[4rem] w-full text-sm focus:outline-none" />
                     <button onClick={seacrhCity} className="bg-[var(--bt-color)] text-white px-3 py-2  rounded-2xl text-sm xl:text-center">Pesquisar</button>
