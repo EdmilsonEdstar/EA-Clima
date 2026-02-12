@@ -11,8 +11,8 @@ function App() {
     <>
         <main className="w-full flex flex-col justify-center items-center mb-8">
           <Pesquisar  />
+          <Footer/>
         </main>
-        <Footer/>
       </>    
   )
 }

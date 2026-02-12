@@ -17,7 +17,7 @@ export function ShoWeather(props: ShowWheatherProps) {
 
   return (
     <>
-      <div className="w-full xl:w-[50%] flex flex-col justify-center items-center gap-3 py-8 px-2 bg-[var(--bg-color)] text-[var(--text-color)] rounded-2xl">
+      <div className="animate-fade-in w-full xl:w-[50%] flex flex-col justify-center items-center gap-3 py-8 px-2 bg-[var(--bg-color)] text-[var(--text-color)] rounded-2xl">
         
         <div className="flex flex-col justify-center items-center gap-2">
           <span className="text-[var(--text-color)] font-bold">{props.city}</span>

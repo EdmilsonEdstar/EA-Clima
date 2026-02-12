@@ -36,7 +36,7 @@ export function ShowWeather5days(props: ShowWheather5daysProps) {
     });
 
   return (
-    <div className="w-full xl:w-[50%] flex justify-between items-center overflow-x-auto [ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:display-none text-center gap-8 py-8 px-8 bg-[var(--bg-color)] text-[var(--text-color)] rounded-2xl">
+    <div className=" animate-fade-in w-full xl:w-[50%] flex justify-between items-center overflow-x-auto [ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:display-none text-center gap-8 py-8 px-8 bg-[var(--bg-color)] text-[var(--text-color)] rounded-2xl">
       {dailyForecast.map((day, index) => (
         <div key={index} className="flex flex-col justify-center items-center gap-2 mr-4 min-w-[80px]">
           <span className="text-[var(--text-color)] font-bold text-xl">{day.dayName}</span>
