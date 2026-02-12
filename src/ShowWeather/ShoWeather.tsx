@@ -1,5 +1,4 @@
 import { Droplet, LucideThermometer, WindIcon } from "lucide-react";
-import type React from "react";
 
 type ShowWheatherProps = {
   city: string;
