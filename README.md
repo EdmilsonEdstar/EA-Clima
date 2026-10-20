@@ -1,73 +1,59 @@
-# React + TypeScript + Vite
+# 🌤️ EA-Weather — Previsão Meteorológica em Tempo Real
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **EA-Weather** é uma aplicação web moderna de previsão meteorológica desenvolvida para fornecer dados climáticos precisos e instantâneos. O projeto consome de forma assíncrona a API OpenWeather, tratando fluxos complexos de estados de carregamento (loading), respostas nulas e erros de rede.
 
-Currently, two official plugins are available:
+**🔗 Link do Projeto Ativo:** [ea-clima.vercel.app](https://vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Funcionalidades Principais
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+*   **Pesquisa Dinâmica por Cidade:** Procura dados meteorológicos de qualquer localização global em tempo real.
+*   **Tratamento de Estados de UI (UX):** Implementação de *skeletons* e indicadores de carregamento durante as requisições HTTP, evitando quebras visuais para o utilizador.
+*   **Gestão de Erros Robusta:** Mensagens amigáveis caso a cidade não seja encontrada ou ocorra uma falha de ligação com o servidor externo.
+*   **Design Responsivo Fluido:** Interface totalmente adaptada para dispositivos móveis e desktop, utilizando uma abordagem utilitária.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Stack Tecnológica
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+*   **Framework:** React.js (com Vite)
+*   **Linguagem:** TypeScript (Tipagem estática estrita para evitar erros em runtime)
+*   **Estilização:** Tailwind CSS (Estilização baseada em utilitários focada em performance)
+*   **API Externa:** OpenWeather API (Consumo assíncrono através de Fetch/Axios)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🧠 Desafios Técnicos & Aprendizagens
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Desenvolver este sistema permitiu solidificar conceitos avançados do ecossistema React e TypeScript:
+1.  **Consumo Assíncrono Seguro:** Manipulação do ciclo de vida de componentes React com `useEffect` e tratamento de concorrência nas requisições.
+2.  **Segurança de Tipos:** Criação de interfaces TypeScript rigorosas para mapear a resposta JSON complexa da API OpenWeather, garantindo autocompilação estável e prevenção de propriedades `undefined`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚙️ Como Executar Localmente
+
+Siga os passos abaixo para rodar o projeto na sua máquina:
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com
+   ```
+
+2. Entre na pasta do projeto:
+   ```bash
+   cd EA-Clima
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+5. Abra o navegador no endereço indicado (geralmente `http://localhost:5173`).
