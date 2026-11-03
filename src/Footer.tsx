@@ -1,14 +1,11 @@
-export function Footer(){
-    return(
-        <main className="w-full bottom-0 text-2xl">
-            <div className="space-y-6 mx-6">  
-                        <div className="space-y-2">
-                            <p className="text-center text-sm text-[var(--text-color)]">
-                                &copy; {new Date().getFullYear()} Edmilson António. All rights reserved
-                            </p>
-                        </div>
-            </div>
-        </main>
-        
-    )
+export function Footer() {
+  return (
+    <footer className="w-full mt-auto py-6 px-4">
+      <div className="w-full max-w-6xl mx-auto border-t border-blue-500/10 pt-5">
+        <p className="text-center text-xs text-[var(--text-color)] opacity-50">
+          &copy; {new Date().getFullYear()} Edmilson António. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
 }
